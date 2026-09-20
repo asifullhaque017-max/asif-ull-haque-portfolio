@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/john-lester007";
-const CV_URL = "/manus-storage/John_Lester_ATS_CV_22934683.docx";
+const CV_URL = `${import.meta.env.BASE_URL}John_Lester_ATS_CV.docx`;
 
 const navItems = [
   ["About", "about"],

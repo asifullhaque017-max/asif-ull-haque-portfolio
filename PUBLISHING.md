@@ -41,13 +41,7 @@ GitHub Pages works well through a GitHub Actions workflow. For the simplest setu
 
 ## CV download note
 
-The current portfolio uses the WebDev storage path for the CV download button:
-
-```ts
-const CV_URL = "/manus-storage/John_Lester_ATS_CV_22934683.docx";
-```
-
-This is functional in the supplied WebDev project. When deploying the source to a different host, upload `John_Lester_ATS_CV.docx` to that host and update `CV_URL` in `client/src/pages/Home.tsx` to the hosted file path or URL.
+The CV is included at `client/public/John_Lester_ATS_CV.docx` and the download button resolves it through Vite's base URL, so it works on both the WebDev preview and the GitHub Pages project path.
 
 ## Content verification note
 
